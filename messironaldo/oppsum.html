@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="oppsum.css">
+    <script src="oppsum.js"></script>
+    <title>Messi og Ronaldo</title> 
+</head> 
+
+<body>
+    <div id="main">
+
+        <div id="ex">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <!-- viser bare et større bilde Ronaldo -->
+        <div id="storronaldo" class="hidden"></div>
+
+        <!-- spør om hvem som er den beste spilleren i verden -->
+        <div id="messironaldo" class="hidden">
+            Hvem er den beste spilleren i verden?
+            <select name="bygg" id="bygg">
+                <option value="2">..Velg spiller..</option>
+                <option value="1">Ronaldo</option>
+                <option value="0">Messi</option>
+            </select>
+            <div class="hidden">Riktig</div>
+            <div class="hidden">Galt</div>
+
+            <button type="button">Tilbake</button>
+        </div>
+
+
+        <!-- spill av video -->
+        <div id="messi" class="hidden">
+            <div>
+                <video width="480" controls poster="messi.jpg">
+                    <source src="messi.mp4" type="video/ogg"> 
+                </video>
+                <p>
+                    <button type="button">Tilbake</button>
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        setup();
+    </script>
+</body>
+
+</html>
